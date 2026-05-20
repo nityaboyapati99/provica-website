@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { contactDetails } from "../data/siteContent";
 
+const heroVideoUrl = `${import.meta.env.BASE_URL}video/provica-hero.mp4`;
+
 const HeroSection = () => (
   <section className="film-grain relative isolate overflow-hidden bg-cocoa-950 px-6 pb-10 pt-10 md:px-10 lg:h-[calc(100vh-116px)] lg:px-16 lg:pb-10 lg:pt-10">
     <div className="absolute inset-0 bg-hero-radial" />
@@ -78,7 +80,7 @@ const HeroSection = () => (
               playsInline
               preload="metadata"
             >
-              <source src="/video/provica-hero.mp4" type="video/mp4" />
+              <source src={heroVideoUrl} type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(31,58,46,0.04),rgba(18,18,18,0.2))]" />
           </div>

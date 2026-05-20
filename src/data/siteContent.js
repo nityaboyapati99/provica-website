@@ -1,3 +1,5 @@
+const withBase = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Our Story", href: "/our-story" },
@@ -8,7 +10,7 @@ export const navLinks = [
 ];
 
 export const brandAssets = {
-  logoUrl: "/provica-logo-option1-transparent.png",
+  logoUrl: withBase("provica-logo-option1-transparent.png"),
 };
 
 export const contactDetails = {
@@ -43,17 +45,17 @@ export const products = [
   {
     name: "Classico White Compound",
     brand: "Classico by Provica Foods",
-    brandLogo: "/brands/classico-logo.png",
+    brandLogo: withBase("brands/classico-logo.png"),
     description:
       "White compound crafted for bakery, confectionery, coating, decoration, and large-scale chocolate application use.",
     tag: "Compound Range",
-    image: "/products/classico-compounds.jpeg",
+    image: withBase("products/classico-compounds.jpeg"),
     imageAlt: "Classico compound product range including white compound packaging",
   },
   {
     name: "Classico Dark & Milk Compounds",
     brand: "Classico by Provica Foods",
-    brandLogo: "/brands/classico-logo.png",
+    brandLogo: withBase("brands/classico-logo.png"),
     description:
       "Dark and milk compound solutions developed for reliable melt, coating performance, and production consistency.",
     tag: "Industrial Compound",
@@ -61,7 +63,7 @@ export const products = [
   {
     name: "Zoops Chocolate Spreads",
     brand: "Zoops under the Provica entity",
-    brandLogo: "/brands/zoops-logo.png",
+    brandLogo: withBase("brands/zoops-logo.png"),
     description:
       "Zoops is the chocolate brand within the Provica portfolio, built around spreadable indulgence and consumer-facing retail appeal.",
     tag: "Consumer Brand",
