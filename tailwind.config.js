@@ -6,31 +6,31 @@ export default {
       colors: {
         cocoa: {
           950: "#121212",
-          900: "#1F3A2E",
-          850: "#254435",
-          800: "#2E4D3E",
-          700: "#45614F",
-          600: "#6A7D70",
-          500: "#8A9A8F",
-          400: "#B2BCAE",
+          900: "#241712",
+          850: "#2f1d16",
+          800: "#4A3427",
+          700: "#6b4a39",
+          600: "#8b6753",
+          500: "#b08a70",
+          400: "#d2b59b",
           300: "#D8C3A5",
           200: "#E7D8C4",
           100: "#F5EFE6",
         },
         gold: "#C8A96B",
         ember: "#4A3427",
-        leaf: "#5C7654",
+        leaf: "#6a5842",
       },
       fontFamily: {
         display: ['"Cormorant Garamond"', "serif"],
         body: ['"Manrope"', "sans-serif"],
       },
       boxShadow: {
-        glow: "0 28px 90px rgba(9, 17, 13, 0.24)",
+        glow: "0 28px 90px rgba(28, 16, 10, 0.28)",
       },
       backgroundImage: {
         "hero-radial":
-          "radial-gradient(circle at top, rgba(200,169,107,0.18), transparent 38%), linear-gradient(135deg, rgba(18,18,18,0.98), rgba(31,58,46,0.88))",
+          "radial-gradient(circle at top, rgba(200,169,107,0.18), transparent 38%), linear-gradient(135deg, rgba(18,18,18,0.98), rgba(74,52,39,0.88))",
         parchment:
           "linear-gradient(180deg, rgba(245,239,230,0.98), rgba(231,216,196,0.92))",
       },

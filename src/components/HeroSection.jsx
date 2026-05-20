@@ -3,12 +3,24 @@ import { Link } from "react-router-dom";
 import { contactDetails } from "../data/siteContent";
 
 const heroVideoUrl = `${import.meta.env.BASE_URL}video/provica-hero.mp4`;
+const backgroundFarmVideoUrl = "https://upload.wikimedia.org/wikipedia/commons/7/79/IUGFS_drone.webm";
 
 const HeroSection = () => (
   <section className="film-grain relative isolate overflow-hidden bg-cocoa-950 px-6 pb-10 pt-10 md:px-10 lg:h-[calc(100vh-116px)] lg:px-16 lg:pb-10 lg:pt-10">
     <div className="absolute inset-0 bg-hero-radial" />
-    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-20" />
-    <div className="absolute inset-0 bg-[linear-gradient(110deg,rgba(18,18,18,0.84),rgba(31,58,46,0.44),rgba(18,18,18,0.92))]" />
+    <div className="absolute inset-0 overflow-hidden opacity-24">
+      <video
+        className="h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      >
+        <source src={backgroundFarmVideoUrl} type="video/webm" />
+      </video>
+    </div>
+    <div className="absolute inset-0 bg-[linear-gradient(110deg,rgba(18,18,18,0.84),rgba(74,52,39,0.4),rgba(18,18,18,0.92))]" />
     <div className="absolute inset-x-0 bottom-0 h-48 bg-[linear-gradient(180deg,transparent,rgba(18,18,18,0.86))]" />
 
     <div className="relative mx-auto grid max-w-7xl gap-8 lg:h-full lg:grid-cols-[0.96fr_0.94fr] lg:items-center">
@@ -82,7 +94,7 @@ const HeroSection = () => (
             >
               <source src={heroVideoUrl} type="video/mp4" />
             </video>
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(31,58,46,0.04),rgba(18,18,18,0.2))]" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(74,52,39,0.06),rgba(18,18,18,0.2))]" />
           </div>
         </div>
       </motion.div>
